@@ -251,6 +251,7 @@ input[type="checkbox"] {
 input[type="submit"] {
 	width: 200px;
   border-radius: 10px;
+	color: black;
 }
 
 form li {
