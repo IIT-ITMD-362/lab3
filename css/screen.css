@@ -195,18 +195,68 @@ html {
   font-size: 1.375em; /* 22px */
   line-height: 1.182em; /* 26px / ~ 120% */
   padding: 1.182em; /* 26px / ~ 120% */
+	font-family: 'Inter', sans-serif;
   text-rendering: optimizeLegibility;
 }
 
+h1{
+	text-align: center;
+	font-size: 1.667em; 
+	line-height: 1.182em;/* without this line height, H1 doesn't look right, you mentioned doubling the line-height, but that looks too big. So I added the same line height but to the h1 and it works and I don't know why */
+	padding-bottom: 1.182em; /* 26px / ~ 120% */
+}
+
+p{
+	text-align: center;
+	padding-bottom: 1.182em; /* 26px / ~ 120% */
+	/* adds "modular" padding between each p tag */
+}
+
+#wrap{
+	width: 75%;
+	margin: 0 auto;
+}
 label {
-  display: block;
+  display: inline;  /* allows input to flow next to label  */
 }
 
-@media screen and (max-width: 600px){
-	#wrap{
-		width: 100%;
-		margin: 0 auto;
-		color: blue;
-	}
+input {
+  box-sizing: border-box;
+  width: 100%;
+  height: 60px;
+  border: 0;
+  border-radius: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  background-color: #DDD;
 }
 
+input[type="email"] {
+  width: 50%;
+	height: 1.182em; /* 26px / ~ 120% */
+}
+
+input[type="checkbox"] {
+  height: 1.182em;
+  width: 1em;
+  float: left;
+}
+
+#age-label {
+  padding-left: 0.5em;
+}
+
+input[type="submit"] {
+	width: 200px;
+  border-radius: 10px;
+}
+
+form li {
+  padding-bottom: 1.182em; /* 26px / ~ 120% */  
+	/* adding a padding to each li so that they aren't so close together */
+}
+
+ol{
+	padding-top: 100px; 
+}
