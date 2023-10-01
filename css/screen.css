@@ -239,7 +239,7 @@ input[type="email"] {
 }
 
 input[type="checkbox"] {
-  height: 1.182em;
+  height: 1em;
   width: 1em;
   float: left;
 }
