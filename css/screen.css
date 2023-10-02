@@ -229,7 +229,7 @@ input {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
-  background-color: #DDD;
+  background-color: #D2D2D2;
 }
 
 input[type="email"] {
@@ -254,7 +254,8 @@ input[type="checkbox"] {
 input[type="submit"] {
 	width: 200px;
   border-radius: 10px;
-	color: black;
+	background-color: #373637;
+	color: #FFFFFF;
 }
 
 form li {
